@@ -1,0 +1,10 @@
+#sidebar{
+  width: 400px;
+  height: 150px;
+  float: right;
+  font-size: 20px;
+}
+p{
+  width: 700px;
+  padding-left: 25px;
+}
