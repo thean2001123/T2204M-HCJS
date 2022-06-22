@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+#backgr {
+    background-color: antiquewhite;
+    width: auto;
+    height: auto;
+    padding: 5% 5%;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    border: 0.5px solid black;
+    border-radius: 15px;
+}
+
+#opportunity {
+    float: right;
+}
+
+#container {
+    margin: 0 40%;
+}
