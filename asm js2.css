@@ -1,0 +1,50 @@
+body {
+  display: block;
+}
+
+.container {
+  margin: 0 25%;
+  background-color: #cafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#box {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+#Weather {
+  display: flex;
+  align-items: center;
+}
+
+
+#icon,
+#temp,
+#hump,
+#press {
+  margin: 1vw;
+}
+
+#nhietdo {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 1vw;
+}
+#temp {
+  font-size: 3vw;
+}
+
+#subV {
+  display: block;
+}
+
+#cityV {
+  padding-right: 1vw;
+  display: flex;
+  align-items: center;
+}

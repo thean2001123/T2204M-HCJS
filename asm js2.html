@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ASM JS2</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="css/asm%20js2.css"
+</head>
+<body>
+
+<div id="box" class="container">
+  <div id="Weather">
+    <p id="icon"><img src="..."></p>
+    <div id="nhietdo">
+      <span id="temp">34</span>
+      <span><sup>o</sup>C|<sup>o</sup>F</span>
+    </div >
+    <div id="subV">
+      <p><span id="hump">Precipitation:59%</span></p>
+      <p><span id="press">Humidity:1000</span></p>
+    </div>
+  </div>
+  <div id="cityV">
+    <div>
+      <p id="city">Hà Nội</p>
+      <p id="desc">Ligh rain</p>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  $.ajax({
+    url: "https://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+    method: "get",
+    success: function(data) {
+      var ct = $("#city");
+      ct.text(data.name + ", " + data.sys.country);
+      $("#temp").html(data.main.temp + "<sup>o</sup>C");
+      $("#hump").html(data.main.humidity + "%");
+      $("#press").text(data.main.pressure);
+      $("#desc").text(data.weather[0].description);
+      $("#icon").html("<img src='https://openweathermap.org/img/wn/" +
+        data.weather[0].icon + "@2x.png' />");
+    }
+  })
+</script>
+
+</div>
+
+
+
+</body>
+</html>
