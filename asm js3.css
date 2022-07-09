@@ -1,0 +1,24 @@
+body{
+  background-image: url("/images/thoitiet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-content{
+  float: left;
+  width: 100%;
+  color: white;
+  background-color: gray;
+  padding: 20px;
+  margin: 15px 0;
+  height: 180px;
+  border-radius: 6px;
+}
+.col-content h2{
+  font-size: 18px;
+}
+.col-content p{
+  font-size: 15px;
+}
+.col-content img{
+  transform: translate(150px,-100px);
+}
